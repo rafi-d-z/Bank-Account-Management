@@ -29,5 +29,6 @@ class SavingsAccount(Account):
             print("Withdraw amount too high")
 
     def add_interest(self):
-        self.bal *= self.rate
+        self.bal = self.bal + self.bal * self.rate
+
 
